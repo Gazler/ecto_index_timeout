@@ -2,6 +2,23 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
+config :ecto_crash_no_umbrella, EctoCrashNoUmbrella.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  database: "ecto_crash_no_umbrella_repo",
+  username: "postgres",
+  password: "postgres",
+  hostname: "localhost",
+  pool: Ecto.Adapters.SQL.Sandbox
+
+
+config :ecto_crash_no_umbrella, EctoCrashNoUmbrella.RepoTwo,
+  adapter: Ecto.Adapters.Postgres,
+  database: "ecto_crash_no_umbrella_repo",
+  username: "postgres",
+  password: "postgres",
+  hostname: "localhost",
+  pool: Ecto.Adapters.SQL.Sandbox
+
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project. For this reason,
