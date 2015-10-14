@@ -1,0 +1,2 @@
+defmodule EctoCrashNoUmbrella do
+end
